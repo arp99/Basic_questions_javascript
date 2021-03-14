@@ -1,0 +1,22 @@
+<!-- Write program to take a month as an input from the user and find out whether the month has 31 days or not. -->
+<script>
+    const checkMonthDayCount = month =>{
+        switch(month){
+            case 'september':
+            case 'april':
+            case 'june':
+            case 'november':
+            case 'february':return false;
+                            break;
+            default:return true;
+        }
+    }
+
+    const month = prompt("Enter a month").toLowerCase();
+
+    if(checkMonthDayCount(month)){
+        console.log("The month has 31 days");
+    }else{
+        console.log("The month has less than 31 days");
+    }
+</script>
