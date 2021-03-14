@@ -1,0 +1,14 @@
+<!-- Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17 -->
+<script>
+    const getMax = (num1 , num2 , num3) =>{
+        let max = num1;
+        if(num2 > max && num2 > num3){
+            max = num2;
+        }else if(num3 > max && num3 > num2){
+            max = num3;
+        }
+        return max;
+    }
+
+    console.log(getMax(8 , 23 , 17))
+</script>
