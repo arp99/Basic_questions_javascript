@@ -1,0 +1,14 @@
+<!-- Write a program to take a day as an input and determine whether it is a weekday or weekend -->
+<script>
+    const checkWeekDay = day =>{
+        if(day === 'saturday' || day === 'sunday') return false;
+        else return true
+    }
+
+    const day = prompt("Enter a day of week").toLowerCase();
+    if(checkWeekDay(day)){
+        console.log("Oh no! It's a weekday");
+    }else{
+        console.log("Hurray! It's a weekend");
+    }
+</script>
