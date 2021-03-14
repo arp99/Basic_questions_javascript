@@ -1,0 +1,18 @@
+<!-- Write a Program to take a number input from user and find if the number is Prime or not. -->
+<script>
+    const isPrime = num =>{
+        if(num<=1) return false;
+        for(let i = 2 ;i<=Math.sqrt(num);i++){
+            if(num%i == 0)
+                return false;
+        }
+        return true;
+    }
+
+    const num = Number.parseInt(prompt("Enter a number to check prime"))
+    if(isPrime(num)){
+        console.log(`${num} is a prime number`);
+    }else{
+        console.log(`${num} is not a prime number`)
+    }
+</script>
