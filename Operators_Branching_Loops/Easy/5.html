@@ -1,0 +1,14 @@
+<!-- Write a program to find the minimum out of three given numbers. The numbers are num1=35, num2=29 and num3=46. -->
+<script>
+    const getMin = (num1 , num2 , num3) =>{
+        let max = num1;
+        if(num2 < max && num2 < num3){
+            max = num2;
+        }else if(num3 < max && num3 < num2){
+            max = num3;
+        }
+        return max;
+    }
+
+    console.log(getMin(35 , 29 , 46))
+</script>
