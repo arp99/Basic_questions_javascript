@@ -1,0 +1,23 @@
+<!-- Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz". -->
+<script>
+    const getFizzBuzz = () =>{
+        const res = []
+        let item = '';
+        for(let i = 1 ;i<=100 ;i++){
+            if(i%3 == 0 && i%5==0){
+                item = 'FizzBuzz';
+            }else if(i%3 == 0){
+                item = 'Fizz';
+            }else if(i%5 == 0){
+                item = 'Buzz';
+            }else{
+                item = i;
+            }
+
+            res.push(item);
+        }
+        return res;
+    }
+
+    console.log(getFizzBuzz())
+</script>
