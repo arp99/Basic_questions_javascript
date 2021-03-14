@@ -1,2 +1,6 @@
-# Basic_questions_javascript
- This are my solutions of the neogcamp/build repo,  
+# Basic questions javascript
+ These are my solutions of the neogcamp/build repo: 
+ * [Operators , Branching , loops](https://github.com/arp99/Basic_questions_javascript/tree/main/Operators_Branching_Loops)
+    
+    * [Easy](https://github.com/arp99/Basic_questions_javascript/tree/main/Operators_Branching_Loops/Easy)
+    * [Itermediate](https://github.com/arp99/Basic_questions_javascript/tree/main/Operators_Branching_Loops/Intermediate)
