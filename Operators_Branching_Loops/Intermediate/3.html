@@ -1,0 +1,15 @@
+<!-- Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21.... -->
+<script>
+    function Fibonacci(n){
+        if(n === 0 || n === 1)
+            return n;
+        return Fibonacci(n-1) + Fibonacci(n - 2);
+    }
+
+    const num = Number.parseInt(prompt("Enter limit to print fibonacci series:"))
+    let res = ''
+    for(let i = 0 ;i<num ;i ++){
+        res += `${Fibonacci(i)} `
+    }
+    console.log(res)
+</script>
