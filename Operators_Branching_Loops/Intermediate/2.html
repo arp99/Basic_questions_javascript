@@ -1,0 +1,18 @@
+<!-- Print the following star pattern :-
+
+*
+* *
+* * *
+* * * *
+* * * * * -->
+<script>
+    const printStarPattern = (() =>{
+        let res = '';
+        for(let i = 0; i<5 ; i++){
+            res += '* '.repeat(i+1)
+            res += '\n'
+        }
+        console.log(res)
+    })()
+
+</script>
