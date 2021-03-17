@@ -1,0 +1,11 @@
+<script>
+    const indexOf = (arr , item) =>{
+        let index = 0;
+        for(num of arr){
+            if(num === item) return index;
+            index++;
+        }
+        if(index === arr.length) return -1;
+    }
+    console.log(indexOf([1,6,3,5,8,9] ,3))
+</script>
