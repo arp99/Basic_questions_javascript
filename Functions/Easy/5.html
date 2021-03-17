@@ -1,0 +1,5 @@
+<script>
+    const reducer = (a ,  b) => a > b ? a : b;
+    const getMax = (...nums) => nums.reduce(reducer , nums[0]);
+    console.log(getMax(34 , 5 , 7, 88))
+</script>
