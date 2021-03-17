@@ -1,0 +1,5 @@
+<script>
+    const reducer = (a , b ) => a < b ? a : b;
+    const getMin = (...nums) => nums.reduce(reducer , nums[0])
+    console.log(getMin(3 , 5 , 9 , 1))
+</script>
