@@ -1,0 +1,15 @@
+<script>
+    const rotateNum = (num , pos) =>{
+        const digitArr = num.toString().split('') , len = digitArr.length;
+        while(pos--){
+            const firstDigit = digitArr[0];
+            for(let i = 1;i<len;i++){
+                digitArr[i-1] = digitArr[i];
+            }
+            digitArr[len - 1] = firstDigit;
+        }
+        return parseInt(digitArr.join(''))
+    }
+
+    console.log(rotateNum(1234 , 2))
+</script>
