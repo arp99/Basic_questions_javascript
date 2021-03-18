@@ -1,0 +1,11 @@
+<!-- Given the Cost Price(CP) and Selling Price(SP) of a product. Write a Program to Calculate the Profit or Loss. -->
+<script>
+    const getProfitLoss = (CP , SP) =>{
+        if(SP >= CP){
+            return `${SP - CP} Profit`
+        }else{
+            return `${CP - SP} Loss`
+        }
+    }
+    console.log(getProfitLoss(3125 , 1125))
+</script>
