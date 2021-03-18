@@ -1,0 +1,17 @@
+<script>
+    const sortArray = arr =>{
+        const resultArr = [...arr] , len = resultArr.length;
+        for(let i = 0;i<len - 1 ; i++){
+            for(let j = 0 ;j<len - i - 1;j++){
+                if(resultArr[j] > resultArr[j+1]){
+                    const temp = resultArr[j];
+                    resultArr[j] = resultArr[j+1];
+                    resultArr[j+1] = temp;
+                }
+            }
+        }
+        return resultArr;
+    }
+
+    console.log(sortArray([100,83,32,9,45,61]))
+</script>
