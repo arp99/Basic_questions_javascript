@@ -10,3 +10,5 @@
    * [Easy](https://github.com/arp99/Basic_questions_javascript/tree/main/Functions/Easy)
    * [Medium](https://github.com/arp99/Basic_questions_javascript/tree/main/Functions/Medium)
    * [Advanced](https://github.com/arp99/Basic_questions_javascript/tree/main/Functions/Advanced)
+
+ * [Numbers](https://github.com/arp99/Basic_questions_javascript/tree/main/Numbers)
