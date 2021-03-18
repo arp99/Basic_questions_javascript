@@ -1,0 +1,13 @@
+<script>
+    const octalToDec = oct =>{
+        const octalString = oct.toString();
+        let power = octalString.length - 1;
+        let result = 0;
+        for(digit of octalString){
+            result += parseInt(digit)*Math.pow(8 , power--);
+        }
+        return result;
+    }
+
+    console.log(octalToDec(116))
+</script>
