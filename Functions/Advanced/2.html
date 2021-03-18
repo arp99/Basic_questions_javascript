@@ -1,0 +1,27 @@
+<!-- Given a sentence, return a sentence with first letter of all words as capital.
+Example:
+Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers -->
+
+<script>
+    const toSentenceCase = sentence =>{
+        let resultStr = '';
+        for(let i = 0;i<sentence.length;i++){
+            if( i === 0){
+                //convert to upper case iff in lower case
+                resultStr += sentence.charAt(i).toUpperCase();
+            }
+            else if(sentence[i] === ' '){
+                //convert next char to upper case iff in lower case
+                resultStr += ' ' + sentence.charAt(i+1).toUpperCase();
+                i++;
+            }
+            else{
+                //convert to lower case if already in upper case
+                resultStr += sentence.charAt(i).toLowerCase();
+            }
+        }
+        return resultStr;
+    }
+
+    console.log(toSentenceCase('wE are neOGrammers'))
+</script>
