@@ -1,0 +1,11 @@
+<script>
+    const getSecretCode = (word , places) =>{
+        let resultStr = ''
+        for(let i = 0 ;i<word.length ; i++){
+            resultStr += String.fromCharCode(word.charCodeAt(i) + places);
+        }
+        return resultStr;
+    }
+
+    console.log(getSecretCode('abc' , 2))
+</script>
