@@ -1,0 +1,13 @@
+<script>
+    const getNOdds = N =>{
+        const odds = []
+        for(let i = N ;i>0;i--){
+            if(i%2 === 1)
+                odds.push(i)
+        }
+        return odds;
+    }
+
+    const oddsArr = getNOdds(10);
+    console.log(...oddsArr)
+</script>
