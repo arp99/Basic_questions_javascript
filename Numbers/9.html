@@ -1,0 +1,11 @@
+<script>
+    const getDigitSum = digitStr =>{
+        let sum = 0;
+        for(num of digitStr){
+            if(!isNaN(parseInt(num)))
+                sum += parseInt(num)
+        }
+        return sum;
+    }
+    console.log(getDigitSum('1234'))
+</script>
