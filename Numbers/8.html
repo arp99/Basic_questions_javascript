@@ -1,13 +1,13 @@
 <script>
     const getNOdds = N =>{
         const odds = []
-        for(let i = N ;i>0;i--){
+        for(let i = 1 ; N>0 ; i+=2 , N--){
             if(i%2 === 1)
                 odds.push(i)
         }
-        return odds;
+        return odds.reverse();
     }
 
-    const oddsArr = getNOdds(10);
+    const oddsArr = getNOdds(4);
     console.log(...oddsArr)
 </script>
