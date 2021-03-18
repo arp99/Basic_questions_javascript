@@ -1,0 +1,13 @@
+<script>
+    const decToBinary = dec =>{
+        const binArr = []
+        let temp = dec;
+        while(temp){
+            binArr.push(temp%2);
+            temp = Math.floor(temp/2);
+        }
+        return parseInt(binArr.reverse().join(''))
+    }
+
+    console.log(decToBinary(8))
+</script>
