@@ -1,0 +1,13 @@
+<script>
+    const getSquareArea = side => side*side;
+    const getSquarePerimeter = side => 4*side;
+    const getCubeArea = side => 6*side*side;
+    const getCubeVolume = side => side*side*side;
+
+    const sqSide = parseInt(prompt('Enter side of square'));
+    const cubeSide = parseInt(prompt('Enter side of cube'));
+    console.log(`Area of square : ${getSquareArea(sqSide)}`)
+    console.log(`Perimeter of square : ${getSquarePerimeter(sqSide)}`)
+    console.log(`Surface area of cube : ${getCubeArea(sqSide)}`)
+    console.log(`Volume of cube : ${getCubeVolume(sqSide)}`)
+</script>
