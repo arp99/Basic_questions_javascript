@@ -1,0 +1,18 @@
+<script>
+    const toUpperCase = str =>{
+        let resultStr = ''
+        for(let i = 0;i<str.length;i++){
+            //check if the current character is in lowercase
+            if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122){
+                //then convert lower case character to uppercase
+                resultStr += String.fromCharCode(str.charCodeAt(i) - 32);
+            }
+            else{
+                resultStr+=str.charAt(i);
+            }
+        }
+        return resultStr;
+    }
+
+    console.log(toUpperCase('Hi there u are beatifuL!'))
+</script>
