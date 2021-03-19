@@ -1,0 +1,46 @@
+<script>
+    const sort = arr =>{
+        const temp = [...arr] , len = arr.length;
+        for(let i =0;i<len-1;i++){
+            for(let j =0;j<len-i-1;j++){
+                if(temp[j] > temp[j+1]){
+                    let temp = temp[j];
+                    temp[j] = temp[j+1];
+                    temp[j+1] = temp;
+                }
+            }
+        }
+        return temp;
+    }
+
+    const getMedian = arr =>{
+        const tempArr = sort(arr);
+        const len = tempArr.length;
+
+        if(len % 2 == 0){
+            return ((tempArr[(len/2)-1] + tempArr[len/2])/2).toFixed(2);
+        }else{
+            return tempArr[Math.floor(len/2)];
+        }
+    }
+
+    const getMode = nums =>{
+        let hash = {}
+        for (let num of nums) {
+            if (!hash[num]) hash[num] = 0
+            hash[num]++
+        } 
+        const maxFreq = Math.max(...Object.values(hash))
+        const modes = []
+        for(const [key , value] of Object.entries(hash)){
+            if(value === maxFreq){
+                modes.push(key)
+            }
+        }
+        return modes;
+    }
+
+    const arr = [1,1,2,3,4];
+    console.log(`The median is : ${getMedian(sort(arr))}`);
+    console.log(`The modes are: ${getMode(arr).join(' ')}`)
+</script>
