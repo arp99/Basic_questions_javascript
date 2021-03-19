@@ -1,0 +1,27 @@
+<script>
+    const isVowel = char =>{
+        switch(char){
+            case 'a': 
+            case 'e': 
+            case 'i': 
+            case 'o':
+            case 'u': return true;
+            default:  return false;
+        }
+    }
+
+    const consonantVowelCount = str =>{
+        let consonant = 0, vowel = 0;
+        for(char of str){
+            if(isVowel(char.toLowerCase())){
+                vowel++;
+            }else{
+                consonant++;
+            }
+        }
+        return [consonant , vowel];
+    }
+
+    const [consonant , vowel] = consonantVowelCount('DifFErent')
+    console.log(`Consonant count: ${consonant}\nVowel count: ${vowel}`)
+</script>
