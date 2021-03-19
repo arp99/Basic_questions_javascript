@@ -1,0 +1,7 @@
+<script>
+    const reducer = (a , b) => a + b;
+    const sumArr = arr => arr.reduce(reducer , 0);
+    const average = arr => (sumArr(arr)/arr.length).toFixed(2)
+
+    console.log(average([1 , 2 , 3, 4]))
+</script>
