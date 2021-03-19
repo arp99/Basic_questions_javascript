@@ -1,0 +1,23 @@
+<script>
+    const isVowel = char =>{
+        switch(char){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o': 
+            case 'u': return true;
+            default: return false;
+        }
+    }
+
+    const removeVowels = str =>{
+        let resultStr = '';
+        for(char of str){
+            if(!isVowel(char.toLowerCase()))
+                resultStr+=char;
+        }
+        return resultStr;
+    }
+
+    console.log(removeVowels('HeEllo wOrld'))
+</script>
