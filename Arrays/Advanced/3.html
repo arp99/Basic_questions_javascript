@@ -1,0 +1,21 @@
+<script>
+    const getIdentityMatrix = row =>{
+        const identity = []
+        for(let i = 0;i<row ;i++){
+            let temp = []
+            for(let j = 0;j<row;j++){
+                if(i == j){
+                    temp.push(1);
+                }else{
+                    temp.push(0);
+                }
+            }
+            identity.push(temp);
+        }
+
+        return identity;
+    }
+
+    const row = parseInt(prompt("Enter row of Identity matrix"));
+    console.log(getIdentityMatrix(row));
+</script>
