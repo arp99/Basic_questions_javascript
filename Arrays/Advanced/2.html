@@ -1,0 +1,17 @@
+<script>
+    const transposeMatrix = matrix =>{
+        const row = matrix.length , col = matrix[0].length;
+        const transposeMatrix = [];
+        for(let j = 0;j<col;j++){
+            let temp = []
+            for(let i = 0;i<row;i++){
+                temp.push(matrix[i][j]);
+            }
+            transposeMatrix.push(temp);
+        }
+        return transposeMatrix;
+    }
+
+    const mat = [[5,4,7],[8,4,2],[0,9,5]]
+    console.log(transposeMatrix(mat))
+</script>
