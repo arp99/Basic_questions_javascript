@@ -20,3 +20,5 @@
     * [Beginner - Intermediate](https://github.com/arp99/Basic_questions_javascript/tree/main/Arrays/beginner%20-%20intermediate)
     
     * [Advanced](https://github.com/arp99/Basic_questions_javascript/tree/main/Arrays/Advanced)
+
+ * [Object and Oops](https://github.com/arp99/Basic_questions_javascript/tree/main/Object%20and%20Oops)
