@@ -13,6 +13,8 @@
 
  * [Numbers](https://github.com/arp99/Basic_questions_javascript/tree/main/Numbers)
 
+  * [Strings](https://github.com/arp99/Basic_questions_javascript/tree/main/Strings)
+  
  * [Arrays](https://github.com/arp99/Basic_questions_javascript/tree/main/Arrays)
 
     * [Beginner - Intermediate](https://github.com/arp99/Basic_questions_javascript/tree/main/Arrays/beginner%20-%20intermediate)
