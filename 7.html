@@ -1,0 +1,17 @@
+<script>
+    const rotateRight = (arr , x) =>{
+        const temp = [...arr] , len = arr.length;
+        let places = x % len;
+        
+        while(places--){
+            
+            const lastNum = temp[len - 1];
+            for(let i = len - 2;i>=0;i--)
+                temp[i+1] = temp[i];
+            temp[0] = lastNum;
+        }
+        return temp;
+    }
+
+    console.log(rotateRight([1,2,3,4,5] , 3))
+</script>
