@@ -1,0 +1,22 @@
+<script>
+    const getLongestAndSmallestStr = (...strings) =>{
+        let maxLen = 0 , minLen = Infinity , longestStr = '',smallestStr = '';
+        for(string of strings){
+            if(string.length > maxLen){
+                maxLen = string.length;
+                longestStr = string;
+            }
+            if(string.length <minLen){
+                minLen = string.length;
+                smallestStr = string;
+            }
+        }
+        return [longestStr , smallestStr]
+    }
+
+    const str1 = prompt("Enter string1")
+    const str2 = prompt("Enter string2")
+    const str3 = prompt("Enter string3")
+    const [longestStr  , smallestStr] = getLongestAndSmallestStr(str1 , str2 , str3);
+    console.log(`Longest string: ${longestStr}\nSmallest string: ${smallestStr}`)
+</script>
