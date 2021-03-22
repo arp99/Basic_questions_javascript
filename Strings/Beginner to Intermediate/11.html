@@ -1,0 +1,39 @@
+<script>
+    const isAlphanumeric = char =>{
+        
+        if(/[^a-zA-Z0-9]/.test(char))
+            return false;
+        return true;
+    }
+    
+    const isPalindrome = str =>{
+        let temp = str;
+        if(str === null || str === '') return true;
+        else{
+            const len = str.length;
+            let left = 0;
+            let right = len - 1;
+            let leftChar, rightChar;
+            temp = temp.toLowerCase();
+            while(left < right){
+                leftChar = temp.charAt(left);
+                rightChar = temp.charAt(right);
+                if(isAlphanumeric(leftChar) && isAlphanumeric(rightChar)){
+                    if(leftChar == rightChar){
+                        left++;
+                        right--;
+                    }else{
+                        return false;
+                    }
+                }
+                else if(!isAlphanumeric(leftChar))
+                    left++;
+                else if(!isAlphanumeric(rightChar))
+                    right--;
+            }
+            return true;
+        }
+    }
+
+    console.log(isPalindrome('A man, a plan, a canal: Panama'))
+</script>
